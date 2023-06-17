@@ -1,0 +1,61 @@
+.custom-editor-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 70vh; /* Set a minimum height for the container */
+  height: 100%; /* Make sure the container expands to fill the available height */
+}
+
+
+
+.sun-editor {
+  width: 100%;
+  flex-grow: 1; /* Allow the editor to grow and fill the available vertical space */
+  height: 70vh !important
+  ;
+}
+
+.editor-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.tooltip-button {
+  background-color: #ccc;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .custom-editor-container {
+    padding: 10px;
+    height: auto; /* Reset the height on smaller screens */
+  }
+
+  .editor-controls {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+  }
+
+  .tooltip-button,
+  button {
+    margin-bottom: 10px;
+  }
+}

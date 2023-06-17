@@ -1,0 +1,23 @@
+[
+  {
+    "_id": "601aea7a-c9df-4865-afb2-060ffd5ea116",
+    "colName": "auth",
+    "created": "2023-04-10T04:17:42.618Z",
+    "sortNum": 10000,
+    "folders": []
+  },
+  {
+    "_id": "8f7f7a6a-b213-4678-8891-7b4fc4b66eda",
+    "colName": "student",
+    "created": "2023-04-10T04:17:42.657Z",
+    "sortNum": 20000,
+    "folders": []
+  },
+  {
+    "_id": "0f34e24f-3987-4020-a3f6-cb241f1df7ad",
+    "colName": "teacher",
+    "created": "2023-04-10T04:17:42.671Z",
+    "sortNum": 30000,
+    "folders": []
+  }
+]

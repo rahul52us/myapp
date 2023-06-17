@@ -1,0 +1,17 @@
+[
+  {
+    "_id": "323c4f2e-42a0-40b6-b41f-c41b3142afd4",
+    "name": "(Global Env)",
+    "default": false,
+    "global": true,
+    "sortNum": -2,
+    "created": "2023-04-11T04:47:08.842Z",
+    "modified": "2023-04-11T04:47:08.842Z",
+    "data": [
+      {
+        "name": "Token",
+        "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOnsidXNlcklkIjoiMjc1NWJkMGItNjU3ZC00NDFjLThjOTYtMzQwZjE5MjY0NjUxIn0sImlhdCI6MTY4MTIzNTYwM30.PIHLx9yfCm14f-Qcea8Mtuof1xEYRu1AREVogE_0szY"
+      }
+    ]
+  }
+]

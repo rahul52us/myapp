@@ -1,0 +1,324 @@
+[
+  {
+    "_id": "16bde669-889f-4864-8c08-2ffc661b2f82",
+    "colId": "601aea7a-c9df-4865-afb2-060ffd5ea116",
+    "containerId": "",
+    "name": "register",
+    "url": "http://localhost:5000/api/auth/register",
+    "method": "POST",
+    "sortNum": 10000,
+    "created": "2023-04-10T04:17:42.624Z",
+    "modified": "2023-04-10T04:17:42.624Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"firstName\":\"rahul12\",\n  \"lastName\":\"kushwah\",\n  \"username\":\"karan\",\n  \"password\":\"karan\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "af5237b1-9197-44af-bd64-6dc83e10ccd1",
+    "colId": "601aea7a-c9df-4865-afb2-060ffd5ea116",
+    "containerId": "",
+    "name": "changePassword",
+    "url": "http://localhost:5000/api/auth/change-password",
+    "method": "POST",
+    "sortNum": 20000,
+    "created": "2023-04-10T04:17:42.625Z",
+    "modified": "2023-04-10T04:17:42.625Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "{{Token}}"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"oldPassword\":\"rahul\",\n  \"newPassword\":\"rahul\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "d8872838-c2cf-4de0-aa84-50816f40d738",
+    "colId": "601aea7a-c9df-4865-afb2-060ffd5ea116",
+    "containerId": "",
+    "name": "login",
+    "url": "http://localhost:5000/api/auth/login",
+    "method": "POST",
+    "sortNum": 30000,
+    "created": "2023-04-10T04:17:42.626Z",
+    "modified": "2023-04-11T17:53:21.042Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"username\":\"rahul52us@gmail.com\",\n  \"password\":\"rahul\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "b5f4a689-6cea-4f8f-9c84-2e927e39fb6e",
+    "colId": "601aea7a-c9df-4865-afb2-060ffd5ea116",
+    "containerId": "",
+    "name": "changeStatus",
+    "url": "http://localhost:5000/api/auth/change-status",
+    "method": "POST",
+    "sortNum": 40000,
+    "created": "2023-04-10T04:17:42.627Z",
+    "modified": "2023-04-10T04:17:42.627Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "{{Token}}"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"userId\":\"535d8e2d-797f-4099-88d9-491dde940cb4\",\n  \"status\":false\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "f8ea9d21-4151-403a-aff2-aa4931bc03f0",
+    "colId": "601aea7a-c9df-4865-afb2-060ffd5ea116",
+    "containerId": "",
+    "name": "update permission",
+    "url": "http://localhost:5000/api/auth/update-permission",
+    "method": "PUT",
+    "sortNum": 50000,
+    "created": "2023-04-10T04:17:42.629Z",
+    "modified": "2023-04-10T04:17:42.629Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "{{Token}}"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"adminUserId\":\"60a6dac9-17bd-4497-9ec1-03e180baa81a\",\n  \"id\":\"fa695abd-c10c-412c-b941-7323b52814aa\",\n  \"student\":[true,true,true,false],\n  \"permission\":[false,true,true,false],\n  \"teacher\":[true,true,true,true]\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "fa4b08e2-7146-4b90-9eae-32a920f3fbf8",
+    "colId": "601aea7a-c9df-4865-afb2-060ffd5ea116",
+    "containerId": "",
+    "name": "upload pic",
+    "url": "http://localhost:5000/api/auth/upload-pic",
+    "method": "POST",
+    "sortNum": 60000,
+    "created": "2023-04-10T04:17:42.630Z",
+    "modified": "2023-04-10T04:17:42.630Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [],
+      "files": [
+        {
+          "name": "files",
+          "value": "d:\\aveosoft\\nestjspro\\src\\common\\upload.helper.ts"
+        },
+        {
+          "name": "files",
+          "value": "d:\\aveosoft\\nestjspro\\src\\modules\\user\\user.service.ts",
+          "isDisabled": true
+        }
+      ]
+    },
+    "tests": []
+  },
+  {
+    "_id": "1bbe95bf-dad1-4bf0-8ede-d40290cbf54f",
+    "colId": "601aea7a-c9df-4865-afb2-060ffd5ea116",
+    "containerId": "",
+    "name": "createadmin",
+    "url": "http://localhost:5000/api/auth/admin",
+    "method": "POST",
+    "sortNum": 70000,
+    "created": "2023-04-10T04:17:42.631Z",
+    "modified": "2023-04-10T04:18:41.962Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"firstName\":\"admin\",\n  \"lastName\":\"surname\",\n  \"username\":\"admin@gmail.com\",\n  \"password\":\"admin\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "d936b594-95e7-4db4-9726-0621e6e97c9e",
+    "colId": "601aea7a-c9df-4865-afb2-060ffd5ea116",
+    "containerId": "",
+    "name": "get_user_count",
+    "url": "http://localhost:5000/api/auth/get-users-count",
+    "method": "POST",
+    "sortNum": 80000,
+    "created": "2023-04-10T04:17:42.632Z",
+    "modified": "2023-04-10T04:17:42.632Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "{{Token}}"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"status\":\"ACCEPTED\",\n  \"adminType\":\"student\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "a3ac0a8c-bbf8-4b84-bca0-2c71858ef6f4",
+    "colId": "8f7f7a6a-b213-4678-8891-7b4fc4b66eda",
+    "containerId": "",
+    "name": "createStudent",
+    "url": "http://localhost:5000/api/student/create",
+    "method": "POST",
+    "sortNum": 10000,
+    "created": "2023-04-10T04:17:42.659Z",
+    "modified": "2023-04-11T18:07:28.317Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "{{Token}}"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"username\":\"sanjana\",\n  \"password\":\"sanjana\",\n  \"dob\":\"2023-03-02\",\n  \"firstName\":\"sanj\",\n  \"lastName\":\"kapoliya\",\n  \"address1\":\"This is address 2\",\n  \"fatherName\":\"Mr. sanju kushwaha\",\n  \"motherName\":\"Mrs. sara kushwaha\",\n  \"sibling\" : 1,\n  \"description\":\"this is description for the users\",\n  \"nickName\":\"Rahu Kush\",\n  \"standard\":3,\n  \"medium\":2,\n  \"phoneNumber\":\"9977053447\",\n  \"zipCode\":\"20202\",\n  \"city\":\"Gwalior\",\n  \"state\":\"madhya pradesh12\",\n  \"country\":\"India\",\n  \"address2\":\"Gwalior\",\n  \"permission\":{\n    \"student\":[false,false,false,false],\n    \"teacher\":[true,false,false,false]\n  }\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "015e4b27-c558-4365-b1fc-faf7e60575e5",
+    "colId": "8f7f7a6a-b213-4678-8891-7b4fc4b66eda",
+    "containerId": "",
+    "name": "updateStudent",
+    "url": "http://localhost:5000/api/student/update",
+    "method": "PUT",
+    "sortNum": 20000,
+    "created": "2023-04-10T04:17:42.660Z",
+    "modified": "2023-04-10T04:17:42.660Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "{{Token}}"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"id\":\"2de95d4a-8430-4224-aa18-5f67f01b9eeb\",\n  \"firstName\":\"rahul\",\n  \"lastName\":\"kushwah\",\n  \"address1\":\"This is address 2\",\n  \"fatherName\":\"Mr. prakash kushwaha\",\n  \"motherName\":\"Mrs. Laxmi kushwaha\",\n  \"sibling\" : 1,\n  \"description\":\"this is description for the users\",\n  \"nickName\":\"Rahu Kush\",\n  \"standard\":5,\n  \"phoneNumber\":\"9977053447\",\n  \"emergencyNumber\":\"8120758780\",\n  \"dob\":\"2023-02-02\",\n  \"zipCode\":\"20202\",\n  \"city\":\"Gwalior\",\n  \"state\":\"madhya pradesh12\",\n  \"country\":\"India\",\n  \"address2\":\"Gwalior\",\n  \"permission\":{\n    \"student\":[true,true,true,true],\n    \"teacher\":[false,false,true,true],\n    \"permission\":[true,false,true,false]\n  }\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "a71cd2fe-a640-411b-9386-ba389bcef1f6",
+    "colId": "8f7f7a6a-b213-4678-8891-7b4fc4b66eda",
+    "containerId": "",
+    "name": "getStudent",
+    "url": "http://localhost:5000/api/student/get",
+    "method": "POST",
+    "sortNum": 30000,
+    "created": "2023-04-10T04:17:42.661Z",
+    "modified": "2023-04-11T04:50:26.816Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "{{Token}}"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"status\":\"ACCEPTED\",\n  \"page\":\"1\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "9df5cb17-eac3-42e8-9471-3ad469504262",
+    "colId": "8f7f7a6a-b213-4678-8891-7b4fc4b66eda",
+    "containerId": "",
+    "name": "single-student",
+    "url": "http://localhost:5000/api/student/single/fc3134c8-b1fa-4471-896f-2e288cdbc1f7",
+    "method": "GET",
+    "sortNum": 40000,
+    "created": "2023-04-10T04:17:42.662Z",
+    "modified": "2023-04-10T04:17:42.662Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "{{Token}}"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "578e1c8a-293f-4471-88c8-67077661e8c1",
+    "colId": "0f34e24f-3987-4020-a3f6-cb241f1df7ad",
+    "containerId": "",
+    "name": "create",
+    "url": "http://localhost:5000/api/teacher/create",
+    "method": "POST",
+    "sortNum": 10000,
+    "created": "2023-04-10T04:17:42.675Z",
+    "modified": "2023-04-25T17:46:06.430Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "{{Token}}"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"fatherName\":\"father Name\",\n  \"motherName\":\"mother Name\",\n  \"firstName\":\"first Name\",\n  \"lastName\":\"last Name\",\n  \"username\" : \"teacher12345678\",\n  \"password\":\"teacher\",\n  \"dob\":\"2020/05/05\",\n  \"phoneNumber\":\"9977053447\",\n  \"address1\":\"address1\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "2a86ce43-a774-4c90-84cf-6048ee1ad1ca",
+    "colId": "0f34e24f-3987-4020-a3f6-cb241f1df7ad",
+    "containerId": "",
+    "name": "update",
+    "url": "http://localhost:5000/api/teacher/update",
+    "method": "PUT",
+    "sortNum": 20000,
+    "created": "2023-04-10T04:17:42.676Z",
+    "modified": "2023-04-10T04:17:42.676Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "{{Token}}"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"id\":\"b70265b2-f79d-432b-a4df-b357c53cf358\",\n  \"firstName\":\"rahul\"\n}",
+      "form": []
+    },
+    "tests": []
+  }
+]
