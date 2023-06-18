@@ -52,10 +52,13 @@ TestimonialCard.propTypes = {
 export default TestimonialCard;
 
 const TestimonialContainer = styled(CustomCard)`
-  padding: 1rem 0.4rem 0.5rem 0.4rem;
+  padding: 1rem 0.4rem 0.3rem 0.arem;
   margin: 0.3rem 0.8rem;
   .testimonail-img {
     margin-bottom: 2rem;
+    width:40px;
+    height:40px;
+
   }
 `;
 const TestimonialHeader = styled.div`
@@ -68,8 +71,8 @@ const UserInfo = styled.div`
   display: flex;
   align-items: center;
   .MuiAvatar-root {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     border: ${(props) => `2px solid ${props.theme.palette.primary.textColor}`};
     cursor: pointer;
   }
@@ -82,20 +85,20 @@ const UserData = styled.div`
 
   h1 {
     font-weight: 600;
-    font-size: 1.4rem;
+    font-size: 1rem;
     color: ${(props) => props.theme.palette.primary.blackColor};
   }
   h6 {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     color: ${(props) => props.theme.palette.primary.textColor};
   }
 `;
 
 const TestimonialContent = styled.div`
   margin-left: 1rem;
-  margin-top: 1rem;
+  margin-top: 0.4rem;
   h6 {
-    font-size: 0.95rem;
+    font-size: 0.80rem;
     color: ${(props) => props.theme.palette.primary.textColor};
   }
   h5 {

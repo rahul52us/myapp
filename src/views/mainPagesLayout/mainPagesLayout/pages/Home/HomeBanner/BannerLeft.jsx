@@ -78,7 +78,7 @@ const TitleContainer = styled.div`
   width: ${(props) => (props.isXlDown ? '90%' : '70%')};
   h3 {
     font-weight: 800;
-    font-size: ${(props) => (props.isXlDown ? '1rem' : '4rem')} !important;
+    font-size: ${(props) => (props.isXlDown ? '1rem' : '3rem')} !important;
   }
   h6 {
     font-size: ${(props) => (props.isXlDown ? '0.8rem' : '1.1rem')} !important;

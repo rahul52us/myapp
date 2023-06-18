@@ -30,12 +30,12 @@ const TitleContainer = styled.div`
     background-color: #b966e721;
     border-radius: 20px;
     padding: 0.5rem 1rem;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     color: #b966e7;
     cursor: pointer;
   }
   h1 {
-    font-size: ${(props) => (props.isMdDown ? '1.2rem' : '2.2rem')};
+    font-size: ${(props) => (props.isMdDown ? '1.2rem' : '2.1rem')};
     font-weight: 800;
     text-align: center;
     width: ${(props) => (props.isMdDown ? '90%' : '60%')};

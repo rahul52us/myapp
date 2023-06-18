@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import { publicRoutes } from './pubicRoutes';
 import MainLayout from '../layout/mainLayouts/mainLayout/MainLayout';
 import { DashboardPrivateRoutes } from './privateRoutes';
-import AuthenticateLayout1 from '../layout/authenticateLayout/AuthenticateLayout1';
+import AuthenticateLayout from '../layout/authenticateLayout/AuthenticateLayout';
 import { observer } from 'mobx-react-lite';
 import { mainPublicRoutes } from './mainRoutes/mainRoutes/mainRoutes';
 const DashboardLayout = lazy(() => import('../layout/dashboardLayout/DashboardLayout'));
@@ -20,7 +20,7 @@ const RoutesIndex = observer(() => {
         ))}
       </Route>
 
-      <Route path="/auth" element={<AuthenticateLayout1 />}>
+      <Route path="/auth" element={<AuthenticateLayout />}>
         {publicRoutes.map((item, index) => (
           <Route element={item.element} path={item.path} key={index} />
         ))}

@@ -64,14 +64,14 @@ const TopFeaturesContent = styled.div`
 const PreTitle = styled(Typography)`
   text-align: center;
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   color: #ffffff;
   text-transform: uppercase;
   height: 200px;
 `;
 const Title = styled(Typography)`
   && {
-    font-size: 1.6rem;
+    font-size: 1.15rem;
     font-weight: 800;
     color: #ffffff;
     text-align: center;
@@ -80,7 +80,13 @@ const Title = styled(Typography)`
   }
 `;
 const Thumbnail = styled.div`
-  height: 250px;
+  height: 130px;
+  img
+  {
+    width:100%;
+    object-fit:contain;
+    height:100%;
+  }
 `;
 const InnerRightImage = styled.div`
   position: absolute;
@@ -88,19 +94,18 @@ const InnerRightImage = styled.div`
   right: 0;
   img {
     height: 100%;
-    object-fit: cover;
   }
 `;
 const TagsContainer = styled(Grid)`
-margin-top: 1.2rem !important;
+margin-top: 1.1rem !important;
 `;
 const TagTitle = styled.span`
   background-color: rgba(255, 255, 255, 0.05);
   min-width: max-content;
   border: 1px solid rgba(255, 255, 255, 0.05);
-  padding: 0.2rem 0.8rem;
+  padding: 0.1rem 0.6rem;
   border-radius: 5px;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   color: #ffffff;
   letter-spacing: 1px;
 `;

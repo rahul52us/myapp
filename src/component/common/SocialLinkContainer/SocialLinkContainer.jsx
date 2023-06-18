@@ -29,7 +29,7 @@ export default SocialLinkContainer;
 
 const LinkIconContainer = styled.div`
   display: flex;
-  width: 60%;
+  width: 70%;
   justify-content: space-between;
   margin-top: 1rem;
   cursor: pointer;

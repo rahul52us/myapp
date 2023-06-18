@@ -16,11 +16,11 @@ const HomeBanner = observer(() => {
   const { isMdDown } = useDeviceInfo();
 
   return (
-    <HomeBannerContainer container image={BannerImage}>
+    <HomeBannerContainer container image={BannerImage} sx={{display:'flex',justifyContent:'space-around'}}>
       <HomeBannerLeft
         item
         md={12}
-        xl={6}
+        xl={7}
         xll={6}
         sm={12}
         xs={12}
@@ -29,7 +29,7 @@ const HomeBanner = observer(() => {
       >
         <BannerLeft />
       </HomeBannerLeft>
-      <HomeBannerRight item md={12} xl={6} xll={6} sm={12} xs={12} size={isMdDown}>
+      <HomeBannerRight item md={12} xl={5} xll={6} sm={12} xs={12} size={isMdDown}>
         <BannerRight />
       </HomeBannerRight>
       <HomeBannerRight item md={12} xl={12} xll={12} sm={12} xs={12}>
