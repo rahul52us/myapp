@@ -10,16 +10,16 @@ const SocialLinkContainer = observer(() => {
   return (
     <LinkIconContainer theme={theme}>
       <Icon>
-        <FacebookOutlined />
+        <FacebookOutlined fontSize='small'/>
       </Icon>
       <Icon>
-        <Twitter />
+        <Twitter fontSize='small'/>
       </Icon>
       <Icon>
-        <Instagram />
+        <Instagram fontSize='small'/>
       </Icon>
       <Icon>
-        <LinkedIn />
+        <LinkedIn fontSize='small'/>
       </Icon>
     </LinkIconContainer>
   );
@@ -36,9 +36,9 @@ const LinkIconContainer = styled.div`
   && {
     span {
       border-radius: 100%;
-      height: 50px;
-      width: 50px;
-      padding: 1rem;
+      height: 40px;
+      width: 40px;
+      padding: 0.8rem;
       display: flex;
       justify-content: center;
       align-items: center;

@@ -2,20 +2,24 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { useDeviceInfo } from '../../../../../../component/CustomHooks/useDevice';
+import { useTheme } from '@mui/material';
 
-const ComponentTitle = ({ title, subTitle }) => {
+const ComponentTitle = ({ title, subTitle, proSubTitle }) => {
+  const theme = useTheme();
   const { isMdDown } = useDeviceInfo();
   return (
-    <TitleContainer isMdDown={isMdDown}>
+    <TitleContainer isMdDown={isMdDown} proSubTitleColor={theme.palette.primary.buttonColor}>
       <h6>{title}</h6>
       <h1>{subTitle}</h1>
+      <h5>{proSubTitle}</h5>
     </TitleContainer>
   );
 };
 
 ComponentTitle.propTypes = {
-  title: PropTypes.string.isRequired,
-  subTitle: PropTypes.string.isRequired,
+  title: PropTypes.string,
+  subTitle: PropTypes.string,
+  proSubTitle: PropTypes.string,
 };
 export default ComponentTitle;
 
@@ -35,9 +39,16 @@ const TitleContainer = styled.div`
     cursor: pointer;
   }
   h1 {
-    font-size: ${(props) => (props.isMdDown ? '1.2rem' : '2.1rem')};
+    font-size: ${(props) => (props.isMdDown ? '1.2rem' : '1.9rem')};
     font-weight: 800;
     text-align: center;
     width: ${(props) => (props.isMdDown ? '90%' : '60%')};
+  }
+  h5 {
+    font-size: ${(props) => (props.isMdDown ? '0.7rem' : '0.9rem')};
+    font-weight: 600;
+    text-align: center;
+    width: ${(props) => (props.isMdDown ? '90%' : '60%')};
+    color: ${(props) => props.proSubTitleColor};
   }
 `;

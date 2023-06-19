@@ -12,7 +12,7 @@ import store from '../../../store/store';
 import { authRoute } from '../../routes/authenticate_constant_route';
 import SocialLinkContainer from '../../../component/common/SocialLinkContainer/SocialLinkContainer';
 
-const AuthenticateLayout1 = observer(() => {
+const AuthenticateLayout = observer(() => {
   const navigate = useNavigate();
   const location = useLocation();
   const {
@@ -54,12 +54,12 @@ const AuthenticateLayout1 = observer(() => {
           xs={12}
           sx={{ display: 'flex', justifyContent: 'center' }}
         >
-          <Grid container sx={{ width: isLgDown ? '100%' : '50%' }} mb={'2rem'}>
+          <Grid container sx={{ width: isLgDown ? '100%' : '60%' }} mb={'2rem'}>
             <Grid item xl={12} md={12} sm={12} xs={12} xxl={12}>
               <Outlet />
               <Divider>Follow Us On Social</Divider>
               <LinkContainer>
-              <SocialLinkContainer />
+                <SocialLinkContainer />
               </LinkContainer>
             </Grid>
           </Grid>
@@ -69,7 +69,7 @@ const AuthenticateLayout1 = observer(() => {
   );
 });
 
-export default AuthenticateLayout1;
+export default AuthenticateLayout;
 
 const ImageContainer = styled.div`
   height: 100%;

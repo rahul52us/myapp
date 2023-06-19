@@ -111,7 +111,7 @@ const CustomInput = ({
               onChange={onChange}
               {...rest}
               sx={{ width: '100%' }}
-              InputProps={{
+              InputProps={ icon && {
                 startAdornment: (
                   <InputAdornment position="start">
                     <Icon sx={{ marginRight: '5px' }}>{icon}</Icon>

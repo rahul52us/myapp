@@ -5,6 +5,7 @@ import Container from '../../../../../component/common/Container/Container';
 import ComponentTitle from '../common/component/ComponentTitle';
 import { useDeviceInfo } from '../../../../../component/CustomHooks/useDevice';
 import ContactCard from './element/ContactCard';
+import ContactFormContainer from './element/ContactFormContainer';
 
 const Contact = observer(() => {
   const { isMdDown } = useDeviceInfo();
@@ -16,6 +17,7 @@ const Contact = observer(() => {
           subTitle="Histudy Course Contact can join with us and It will work."
         />
         <ContactCard />
+        <ContactFormContainer />
       </ContactContainer>
     </ContactMainContainer>
   );
@@ -29,5 +31,5 @@ const ContactMainContainer = styled(Container)`
 `;
 
 const ContactContainer = styled.div`
-  margin-top: ${(props) => (props.size ? '1rem' : '5rem')};
+  margin-top: ${(props) => (props.size ? '1rem' : '3.5rem')};
 `;
